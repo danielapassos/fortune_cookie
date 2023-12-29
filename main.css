@@ -1,94 +1,183 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+:root {
     font-size: 62.5%;
 }
 
-body{
-    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
-    font-size: 1.6rem;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    text-align: center;
-    
-}
-
-.hide{
+.hide {
     display: none;
 }
 
-main{
-    border-radius: 0.3125rem;
-    background: #FFF;
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
-    width: min(32rem, 90%);
-    height: min(42rem, 90%);
-    padding: 3rem 4rem;
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
 }
 
-h1{
-    font-family: 'Montserrat',sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: .8rem;
-}
-
-p{
-    font-family: 'DM Sans',sans-serif;
-    font-weight: normal;
-    font-size: 2rem;
-}
-
-img{
-    margin-top: 1.25rem;
-    padding: 2.7rem 0 2.7rem 0;
-    width: max(20rem, 90%);
-}
-
-.screen1, .screen2{
-    padding: 1.5rem 2rem 2rem 2rem;
-}
-
-/*screen1*/
-.screen1{
+main {
+    background-color: #FFFFFF;
+    width: 42.8rem;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin: 23.9rem auto;
+    display: flex;
     justify-content: center;
-    place-items: center;
+}
+
+/* screen 1 */
+
+.screen1 {
+    width: 30rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #34355B;
+    margin-top: 4.8rem;
+    margin-bottom: 1.4rem;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #34355B;
+    margin-bottom: 2rem;
 }
 
 .screen1 button{
     background: none;
     border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
 }
 
-/*screen2*/
-.screen2{
-    justify-content: center;
-    place-items: center;
+
+#closedCookie {
+    width: 30rem;
+    margin-bottom: 6.4rem;
+
 }
 
-.screen2 p{
-    font-family: 'Dancing script', cursive;
+#closedCookie:hover{
+    animation-name: vibrate-fast;
+		animation-duration: 0.4s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-fill-mode: none;
+        cursor: pointer;
 }
 
-.screen2 button{
+/* screen 2 */
+
+.screen2 {
+    width: 30rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #34355B;
+    margin-top: 4.8rem;
+}
+
+#randomPhrase {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    color: #000000;
+    padding: 1rem;
+    margin-top: 1.7rem;
+
+}
+
+#btnTry {
     background: #FF9500;
-    border-radius: 0 .4rem .4rem 0;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+    border-radius: .4rem;
     border-style: none;
-    font-size: 2rem;
-    border: none;
-    padding: 0.4rem;
+    width: 17.4rem;
+    height: 5.2rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 1.7rem;
+    margin-bottom: 4.8rem;
+    cursor: pointer;
+    
 }
 
+#btnTry:hover{
+    background: #ca7600;
+}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes vibrate-fast {
+			
+    0% {
+        transform:translate(0);
+    }
+    10% {
+        transform:translate(-2px,-2px);
+    }
+    20% {
+        transform:translate(2px,-2px);
+    }
+    30% {
+        transform:translate(-2px,2px);
+    }
+    40% {
+        transform:translate(2px,2px);
+    }
+    50% {
+        transform:translate(-2px,-2px);
+    }
+    60% {
+        transform:translate(2px,-2px);
+    }
+    70% {
+        transform:translate(-2px,2px);
+    }
+    80% {
+        transform:translate(-2px,-2px);
+    }
+    90% {
+        transform:translate(2px,-2px);
+    }
+    100% {
+        transform:translate(0);
+    }
+}
+
+    button {
+
+    }

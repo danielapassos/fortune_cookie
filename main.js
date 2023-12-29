@@ -1,6 +1,6 @@
 //variaveis
-const luckBtn = document.querySelector('#luckBtn')
-const tryAgain = document.querySelector('#tryLuckAgainBtn')
+const luckBtn = document.querySelector('#closedCookie')
+const tryAgain = document.querySelector('#btnTry')
 const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
 
@@ -11,8 +11,10 @@ tryAgain.addEventListener('click', tryAgainFunc)
 
 //funcoes
 function luckClicked(event){
+    console.log("luckClicked function called");
     event.preventDefault()
-    toggleScreen()
+    addShake()
+    setTimeout(toggleScreen, 1000)
 }
 
 function tryAgainFunc(){
@@ -22,4 +24,9 @@ function tryAgainFunc(){
 function toggleScreen(){
     screen1.classList.toggle('hide')
     screen2.classList.toggle('hide')
+}
+
+function addShake(){
+    console.log("addShake function called");
+    luckBtn.classList.add('shake')
 }
