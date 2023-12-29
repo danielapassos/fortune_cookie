@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.hide{
+    display: none;
+}
+
+main{
+    border-radius: 0.3125rem;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    width: min(32rem, 90%);
+    height: min(42rem, 90%);
+    padding: 3rem 4rem;
+}
+
+h1{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+p{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+img{
+    margin-top: 1.25rem;
+    padding: 2.7rem 0 2.7rem 0;
+    width: max(20rem, 90%);
+}
+
+.screen1, .screen2{
+    padding: 1.5rem 2rem 2rem 2rem;
+}
+
+/*screen1*/
+.screen1{
+    justify-content: center;
+    place-items: center;
+}
+
+.screen1 button{
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/*screen2*/
+.screen2{
+    justify-content: center;
+    place-items: center;
+}
+
+.screen2 p{
+    font-family: 'Dancing script', cursive;
+}
+
+.screen2 button{
+    background: #FF9500;
+    border-radius: 0 .4rem .4rem 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: none;
+    font-size: 2rem;
+    border: none;
+    padding: 0.4rem;
+}
+
+
